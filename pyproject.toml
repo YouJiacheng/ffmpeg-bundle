@@ -9,5 +9,5 @@ requires-python = ">=3.12"
 dependencies = []
 
 [tool.hatch.build.targets.wheel]
-include = ["_"]
+bypass-selection = true
 shared-scripts = { "./ffmpeg" = "ffmpeg" }
