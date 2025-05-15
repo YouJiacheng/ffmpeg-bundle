@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ffmpeg-bundle"
+version = "7.1.1+g4991c1ec92"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+include = ["_"]
+shared-scripts = { "./ffmpeg" = "ffmpeg" }
